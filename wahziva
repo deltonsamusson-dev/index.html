@@ -30,10 +30,10 @@ h2{font-size:clamp(2rem,4vw,3.2rem)}
 .top{background:var(--g);color:#d7efe5;font-size:.88rem;text-align:center;padding:8px 20px}
 .top b{color:var(--gold)}
 header{position:sticky;top:0;z-index:30;background:var(--wh);border-bottom:2px solid var(--ink)}
-.nav{display:flex;align-items:center;gap:28px;min-height:70px}
-.brand{display:flex;align-items:center;gap:10px;font:400 1.7rem var(--s);margin-right:auto}
-.logo{width:40px;height:40px;background:var(--g);color:var(--gold);display:grid;place-items:center;font:400 1.6rem var(--s)}
-nav{display:flex;gap:26px;font-weight:500}nav a{padding:6px 0;border-bottom:2px solid transparent}nav a:hover{border-color:var(--gold)}
+
+
+
+
 .bur{display:none;background:0;border:0;cursor:pointer}
 /* hero */
 .hg{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:64px 0}
