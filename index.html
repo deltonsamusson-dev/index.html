@@ -3,306 +3,168 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0B3D2E">
-<meta name="description" content="Wahziva: livros sobre negócios, finanças, investimentos, hábitos, sabedoria, liberdade pessoal, relacionamentos e família. Peça pelo WhatsApp.">
-<title>Wahziva | Livros para ganhar, poupar, decidir e viver melhor</title>
+<meta name="theme-color" content="#073F33">
+<meta name="description" content="Wahziva: livros em módulos e APK sobre empreendedorismo, finanças, investimentos, hábitos, sabedoria, autonomia, relacionamentos e família. Versão física em breve.">
+<title>Wahziva | Livros por categoria</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0..1,0&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0..1,0&display=block" rel="stylesheet">
 <style>
-:root{--ink:#10201C;--mut:#52625D;--paper:#F3F5F2;--wh:#fff;--g:#0B3D2E;--g2:#0B6B4F;--gold:#F2A900;--line:#CFD8D2;--wa:#0B8F4A;--c:#0B6B4F;--tc:#fff;
---s:'DM Serif Display',Georgia,serif;--b:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{margin:0;font:400 1rem/1.6 var(--b);color:var(--ink);background:var(--paper)}
-a{color:inherit;text-decoration:none}button,input,select{font:inherit;color:inherit}
-:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-.i{font-family:'Material Symbols Sharp';font-weight:400;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;font-feature-settings:'liga';font-variation-settings:'FILL' 0,'wght' 400;flex:none}
-.wrap{width:min(1240px,calc(100% - 40px));margin:0 auto}
+:root{--g:#0B5D4B;--gd:#073F33;--gold:#E7B008;--ink:#111827;--mut:#5B6472;--bg:#F5F6F8;--ln:#E4E7EB;--wa:#15803D;--f:Inter,system-ui,-apple-system,'Segoe UI',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;font:400 .95rem/1.5 var(--f);color:var(--ink);background:var(--bg)}
+a{color:inherit;text-decoration:none}button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--g);outline-offset:2px}
+.i{font-family:'Material Symbols Outlined';font-weight:400;font-style:normal;font-size:20px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;font-feature-settings:'liga';flex:none}
+.wrap{width:min(1240px,calc(100% - 32px));margin:0 auto}
 h1,h2,h3,p{margin:0}
-h1,h2{font-family:var(--s);font-weight:400;line-height:1.04;letter-spacing:-.01em}
-h2{font-size:clamp(2rem,4vw,3.2rem)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border:2px solid var(--ink);border-radius:2px;background:var(--ink);color:#fff;font-weight:700;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s}
-.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--gold)}
-.btn .i{font-size:20px}
-.bw{background:var(--wa);border-color:var(--wa)}.bl{background:#fff;color:var(--ink)}.bg{background:var(--gold);color:var(--ink);border-color:var(--gold)}
-.sm{min-height:38px;padding:0 14px;font-size:.88rem}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-.top{background:var(--g);color:#d7efe5;font-size:.88rem;text-align:center;padding:8px 20px}
-.top b{color:var(--gold)}
-header{position:sticky;top:0;z-index:30;background:var(--wh);border-bottom:2px solid var(--ink)}
-
-
-
-
-.bur{display:none;background:0;border:0;cursor:pointer}
-/* hero */
-.hg{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:64px 0}
-.tg{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.9rem;color:var(--g2);margin-bottom:18px}
-.hg h1{font-size:clamp(2.8rem,6.2vw,5.4rem)}
-.hg p.l{font-size:1.18rem;color:var(--mut);max-width:520px;margin:20px 0 28px}
-.acts{display:flex;gap:12px;flex-wrap:wrap}
-.pan{background:var(--g);position:relative;height:460px;overflow:hidden;border:2px solid var(--ink)}
-.pan:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:#0B6B4F;right:-120px;top:-120px}
-.pan:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:var(--gold);left:-90px;bottom:-90px;opacity:.9}
-.pan svg{position:absolute;width:170px;height:auto;z-index:1;box-shadow:0 20px 30px -10px #000a;cursor:pointer;transition:transform .3s}
-.pan svg:nth-child(1){left:6%;top:70px;transform:rotate(-7deg)}
-.pan svg:nth-child(2){left:33%;top:26px;transform:rotate(-1deg);width:190px;z-index:2}
-.pan svg:nth-child(3){left:60%;top:84px;transform:rotate(7deg)}
-.pan svg:nth-child(4){left:28%;top:250px;transform:rotate(-4deg);width:150px}
-.pan svg:hover{transform:translateY(-8px) rotate(0)}
-.bar{background:var(--g);color:#fff}
-.bar .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
-.bar div{padding:22px 16px;border-left:1px solid #ffffff30;display:flex;align-items:center;gap:14px}
-.bar div:first-child{border:0;padding-left:0}
-.bar .i{color:var(--gold);font-size:30px}.bar b{display:block;font:400 1.6rem/1.1 var(--s)}.bar span{font-size:.85rem;color:#b9dccd}
-/* biblioteca */
-.sec{padding:80px 0}
-.sh{margin-bottom:34px;max-width:620px}.sh p{color:var(--mut);margin-top:12px}
-.lay{display:grid;grid-template-columns:330px 1fr;gap:40px;align-items:start}
-.side{position:sticky;top:96px}
-.fld{display:flex;align-items:center;gap:10px;min-height:50px;padding:0 14px;background:#fff;border:2px solid var(--ink);margin-bottom:14px}
-.fld input{flex:1;border:0;outline:0;background:0;min-width:0}
-.cl{display:flex;flex-direction:column;border:2px solid var(--ink);background:#fff}
-.cb{display:flex;align-items:center;gap:12px;padding:12px 14px;border:0;border-bottom:1px solid var(--line);background:0;cursor:pointer;text-align:left;line-height:1.25;transition:background .15s}
-.cb:last-child{border:0}.cb:hover{background:var(--paper)}
-.cb .n{font:400 1.05rem var(--s);width:24px;color:var(--mut)}
-.cb .ic{width:34px;height:34px;display:grid;place-items:center;background:var(--c);color:var(--tc);flex:none}
-.cb .ic .i{font-size:20px}
-.cb em{margin-left:auto;font-style:normal;font-size:.8rem;font-weight:700;color:var(--mut)}
-.cb[aria-pressed=true]{background:var(--ink);color:#fff}.cb[aria-pressed=true] .n,.cb[aria-pressed=true] em{color:#c9d6d1}
-.ch{border-left:10px solid var(--c);background:#fff;padding:24px 26px;margin-bottom:22px;border-top:2px solid var(--ink);border-right:2px solid var(--ink);border-bottom:2px solid var(--ink)}
-.ch .k{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between}
-.ch h3{font:400 1.9rem var(--s);line-height:1.1}
-.ch ul{list-style:none;padding:0;margin:16px 0 0;display:flex;flex-wrap:wrap;gap:8px}
-.ch li{display:flex;align-items:center;gap:6px;background:var(--paper);padding:6px 12px;font-size:.88rem;border:1px solid var(--line)}
-.ch li .i{font-size:16px;color:var(--c)}
-.ch select{min-height:42px;padding:0 10px;border:2px solid var(--ink);background:#fff}
-.cnt{color:var(--mut);font-size:.92rem;margin-top:12px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.card{display:grid;grid-template-columns:112px 1fr;gap:16px;background:#fff;border:2px solid var(--ink);padding:14px;transition:transform .15s,box-shadow .15s}
-.card:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--c)}
-.card>svg{width:100%;height:auto;display:block;cursor:pointer;box-shadow:0 8px 14px -6px #0006}
-.bd{display:flex;flex-direction:column;gap:6px;min-width:0}
-.tag{font-size:.75rem;font-weight:700;color:var(--c);display:flex;align-items:center;gap:4px}
-.tag .i{font-size:15px}
-.bd h3{font:400 1.2rem/1.15 var(--s)}
-.au{font-size:.82rem;color:var(--mut)}
-.bd p.d{font-size:.88rem;color:var(--mut);flex:1}
-.ft{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:4px}
-.pr{font:400 1.4rem var(--s)}
-.row{display:flex;gap:6px}
-.empty{grid-column:1/-1;text-align:center;padding:50px;border:2px dashed var(--ink);background:#fff}
-.nt{display:flex;gap:12px;margin-top:22px;padding:16px 18px;background:#FFF3CC;border:2px solid var(--ink);font-size:.92rem}
-/* passos + faq */
-.alt{background:var(--wh);border-block:2px solid var(--ink)}
-.stp{display:grid;grid-template-columns:repeat(3,1fr);border:2px solid var(--ink)}
-.stp div{padding:30px;border-left:2px solid var(--ink);background:var(--paper)}.stp div:first-child{border:0}
-.stp .nn{font:400 3.4rem/1 var(--s);color:var(--g2)}
-.stp h3{font:400 1.5rem var(--s);margin:14px 0 6px}.stp p{color:var(--mut)}
-.fq{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:start}
-details{border-bottom:2px solid var(--ink)}details:first-child{border-top:2px solid var(--ink)}
-summary{cursor:pointer;padding:20px 4px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
-summary::-webkit-details-marker{display:none}
-summary:after{content:"+";font-size:1.5rem;line-height:1}details[open] summary:after{content:"–"}
-details p{padding:0 4px 20px;color:var(--mut)}
-.cta{background:var(--g);color:#fff;padding:60px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;border:2px solid var(--ink);box-shadow:10px 10px 0 var(--gold)}
-.cta p{color:#c9e5d8;margin-top:12px;max-width:480px}
-footer{margin-top:90px;background:var(--ink);color:#b9c7c1;padding:44px 0 26px}
-.fg{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
-footer .brand{color:#fff}footer a:hover{color:var(--gold)}
-.fl{display:flex;flex-direction:column;gap:8px}.fl a{display:flex;gap:8px;align-items:center}
-.copy{border-top:1px solid #34423d;margin-top:28px;padding-top:18px;font-size:.85rem}
-.fab{position:fixed;right:20px;bottom:20px;z-index:25;width:58px;height:58px;background:var(--wa);color:#fff;display:grid;place-items:center;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
-dialog{border:2px solid var(--ink);padding:0;width:min(800px,calc(100% - 28px));max-height:92vh;background:#fff;box-shadow:10px 10px 0 var(--gold)}
-dialog::backdrop{background:#10201Cb3}
-.dg{display:grid;grid-template-columns:250px 1fr}
-.ds{padding:30px 24px;background:var(--c);display:grid;align-content:center}
-.ds svg{width:100%;box-shadow:0 16px 26px -8px #000a}
-.dx{padding:30px;position:relative;display:flex;flex-direction:column;gap:12px}
-.dx h2{font-size:2rem;padding-right:40px}
-.x{position:absolute;right:12px;top:12px;border:0;background:0;cursor:pointer;width:40px;height:40px}
-.buy{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:10px;padding-top:16px;border-top:2px solid var(--ink);flex-wrap:wrap}
-@media(max-width:960px){
-.hg,.lay,.fq,.stp,.dg{grid-template-columns:1fr}
-.stp div{border-left:0;border-top:2px solid var(--ink)}.stp div:first-child{border:0}
-.pan{height:380px}.pan svg{width:120px!important}.pan svg:nth-child(2){width:140px!important}
-.bur{display:block}.nav>.btn{display:none}
-nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;padding:18px 20px;border-bottom:2px solid var(--ink);gap:14px}nav.open{display:flex}
-.side{position:static}
-.cl{flex-direction:row;overflow-x:auto;border:0;background:0;gap:8px;padding-bottom:6px}
-.cb{flex:none;border:2px solid var(--ink);background:#fff;padding:8px 12px}.cb:last-child{border:2px solid var(--ink)}.cb .n{display:none}.cb em{margin-left:6px}
-.bar .wrap{grid-template-columns:1fr 1fr}.bar div{border:0;padding:16px 0}
-.sec{padding:56px 0}.cta{padding:32px}.ds{padding:22px}.ds svg{max-width:170px;margin:auto}
+header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--ln)}
+.hr{display:flex;align-items:center;gap:20px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.35rem;letter-spacing:-.02em;color:var(--gd)}
+.logo{width:36px;height:36px;border-radius:9px;background:var(--g);color:#fff;display:grid;place-items:center;font-weight:800}
+.sb{flex:1;max-width:520px;margin:0 auto;display:flex;align-items:center;gap:8px;height:42px;padding:0 14px;border-radius:10px;background:var(--bg);border:1px solid var(--ln);color:var(--mut)}
+.sb:focus-within{border-color:var(--g);background:#fff}
+.sb input{flex:1;border:0;background:0;outline:0;min-width:0;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:42px;padding:0 18px;border-radius:10px;border:0;font-weight:600;cursor:pointer;background:var(--g);color:#fff;transition:filter .15s}
+.btn:hover{filter:brightness(1.12)}.wa{background:var(--wa)}.gold{background:var(--gold);color:#241a00}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden}
+.hero{background:linear-gradient(110deg,var(--gd),var(--g));color:#fff}
+.hg{padding:44px 0 40px;max-width:760px}
+.hero h1{font-size:clamp(1.9rem,4.4vw,3rem);line-height:1.1;letter-spacing:-.025em;font-weight:800}
+.hero p{color:#cfe7df;margin:14px 0 22px;font-size:1.05rem;max-width:560px}
+.acts{display:flex;flex-wrap:wrap;gap:10px}
+.nav{background:#fff;border-bottom:1px solid var(--ln)}
+.nv{display:flex;gap:8px;overflow-x:auto;padding:10px 0;scrollbar-width:none}.nv::-webkit-scrollbar{display:none}
+.nv a{flex:none;display:flex;align-items:center;gap:6px;height:36px;padding:0 14px;border-radius:99px;border:1px solid var(--ln);font-size:.86rem;font-weight:600;color:#374151;background:#fff}
+.nv a:hover{border-color:var(--c);color:var(--c)}.nv .i{font-size:18px;color:var(--c)}
+main{padding:36px 0 48px}
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.sh h2{font-size:1.6rem;font-weight:800;letter-spacing:-.02em}.sh p{color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.cd{background:#fff;border:1px solid var(--ln);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.cd:hover{box-shadow:0 10px 26px #11182724;transform:translateY(-2px)}
+.ch{background:var(--c);color:#fff;padding:18px 20px;display:flex;align-items:center;gap:14px;position:relative;overflow:hidden}
+.ch:after{content:"";position:absolute;right:-30px;top:-40px;width:120px;height:120px;border-radius:50%;background:#fff;opacity:.12}
+.ic{width:46px;height:46px;border-radius:12px;background:#ffffff2e;display:grid;place-items:center;flex:none}
+.ic .i{font-size:26px;font-variation-settings:'FILL' 1}
+.ch small{font-size:.74rem;font-weight:700;letter-spacing:.08em;opacity:.85;display:block}
+.ch h3{font-size:1.1rem;font-weight:700;line-height:1.25}
+.cb{padding:16px 20px 8px;flex:1}
+.cb b{font-size:.78rem;color:var(--mut);display:block;margin-bottom:8px}
+.cb ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.cb li{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;line-height:1.4}
+.cb li .i{font-size:18px;color:var(--c);margin-top:1px;font-variation-settings:'FILL' 1}
+mark{background:#FFE68A;color:inherit;border-radius:3px;padding:0 2px}
+.cf{padding:12px 20px 18px}
+.cf .btn{width:100%;height:44px}
+.fm{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.fm>*{display:inline-flex;align-items:center;gap:5px;height:34px;padding:0 11px;border-radius:8px;border:1px solid var(--ln);background:#fff;font-size:.82rem;font-weight:600;cursor:pointer}
+.fm .i{font-size:17px}
+.fm button[aria-checked=true]{background:var(--c);border-color:var(--c);color:#fff}
+.fm .soon{cursor:not-allowed;color:#9CA3AF;background:var(--bg);border-style:dashed}
+.fm .soon em{font-style:normal;font-size:.68rem;background:#FDE68A;color:#78350F;border-radius:99px;padding:0 7px;margin-left:2px}
+.fmt{padding:0 0 48px}
+.fmt h2{font-size:1.4rem;font-weight:800;margin-bottom:4px}.fmt>.wrap>p{color:var(--mut);margin-bottom:18px}
+.fx{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.fc{background:#fff;border:1px solid var(--ln);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.fc .ic{background:#E7F3EF;color:var(--g)}.fc h3{font-size:1.1rem}.fc p{color:var(--mut);font-size:.9rem;flex:1}
+.fc.s{border-style:dashed;background:#FBFBFC}.fc.s .ic{background:#F3F4F6;color:#6B7280}
+.bdg{font-size:.74rem;font-weight:700;padding:2px 10px;border-radius:99px;background:#DCFCE7;color:#166534}.bdg.s{background:#FEF3C7;color:#92400E}
+.fc .btn{height:38px;font-size:.86rem;margin-top:4px}
+.empty{grid-column:1/-1;text-align:center;padding:50px 20px;background:#fff;border:1px dashed #c3c9d1;border-radius:14px;color:var(--mut)}
+.empty .i{font-size:40px}
+.how{background:#fff;border-block:1px solid var(--ln);padding:36px 0}
+.how h2{font-size:1.4rem;font-weight:800;margin-bottom:18px}
+.hs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.hs div{display:flex;gap:14px;align-items:flex-start}
+.hs .ic{background:#E7F3EF;color:var(--g);border-radius:50%}.hs .ic .i{font-variation-settings:'FILL' 0}
+.hs b{display:block}.hs span{color:var(--mut);font-size:.9rem}
+footer{background:var(--gd);color:#b6d3c9;padding:28px 0 20px;font-size:.9rem}
+.fg{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer .brand{color:#fff}footer a{display:inline-flex;align-items:center;gap:6px}footer a:hover{color:#fff}
+.fl{display:flex;gap:20px;flex-wrap:wrap}
+.copy{border-top:1px solid #ffffff22;margin-top:18px;padding-top:14px;font-size:.8rem}
+.fab{position:fixed;right:16px;bottom:16px;z-index:25;width:54px;height:54px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 6px 16px #0000004d}
+.fab .i{font-size:28px;font-variation-settings:'FILL' 1}
+@media(max-width:760px){
+.hr{flex-wrap:wrap;height:auto;padding:10px 0 8px;gap:10px}.brand{margin-right:auto}.sb{order:3;flex:1 0 100%;max-width:none}
+html{scroll-padding-top:170px}
+.hs,.fx{grid-template-columns:1fr}.hb span:last-child{display:none}.hb{padding:0 12px}
 }
-@media(max-width:640px){.grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<div class="top"><b>Todos os livros a 100 MT.</b> Escolha no site e peça pelo WhatsApp.</div>
-<header><div class="wrap nav">
-<a class="brand" href="#inicio"><span class="logo">W</span>Wahziva</a>
-<button class="bur" id="bg" aria-label="Abrir menu" aria-expanded="false"><span class="i">menu</span></button>
-<nav id="nv"><a href="#inicio">Início</a><a href="#livros">Biblioteca</a><a href="#pedir">Como pedir</a><a href="#duvidas">Dúvidas</a></nav>
-<a class="btn bw sm" href="https://wa.me/258852450509?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Wahziva." target="_blank" rel="noopener"><span class="i">chat</span>WhatsApp</a>
+<header><div class="wrap hr">
+<a class="brand" href="#"><span class="logo">W</span>Wahziva</a>
+<label class="sb"><span class="i">search</span><span class="sr">Pesquisar</span><input id="q" type="search" placeholder="Pesquisar categoria ou tema" autocomplete="off"></label>
+<a class="btn wa hb" href="https://wa.me/258852450509?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Wahziva." target="_blank" rel="noopener"><span class="i">chat</span><span>WhatsApp</span></a>
 </div></header>
-<main>
-<section id="inicio"><div class="wrap hg">
-<div>
-<span class="tg"><span class="i">auto_stories</span>Livraria digital em Moçambique</span>
-<h1>Leituras para ganhar, poupar, decidir e viver melhor.</h1>
-<p class="l">A Wahziva reúne livros sobre negócios, dinheiro, investimentos, hábitos, sabedoria, liberdade pessoal, relações e família. Cada um por 100 MT.</p>
-<div class="acts"><a class="btn bg" href="#livros"><span class="i">menu_book</span>Ver a biblioteca</a><a class="btn bl" href="https://wa.me/258852450509?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Wahziva." target="_blank" rel="noopener"><span class="i">chat</span>Falar no WhatsApp</a></div>
-</div>
-<div class="pan" id="pan" aria-hidden="true"></div>
-</div>
-<div class="bar"><div class="wrap">
-<div><span class="i">menu_book</span><p><b id="nb">48</b><span>títulos</span></p></div>
-<div><span class="i">category</span><p><b>8</b><span>temas de vida</span></p></div>
-<div><span class="i">sell</span><p><b>100 MT</b><span>por livro</span></p></div>
-<div><span class="i">chat</span><p><b>WhatsApp</b><span>pedido direto</span></p></div>
-</div></div>
-</section>
 
-<section class="sec" id="livros"><div class="wrap">
-<div class="sh"><h2>A biblioteca Wahziva</h2><p>Oito prateleiras, cada uma com o seu tema. Escolha na lista, pesquise pelo título ou abra um livro para ver o resumo.</p></div>
-<div class="lay">
-<aside class="side">
-<label class="fld"><span class="i">search</span><span class="sr">Pesquisar</span><input id="q" type="search" placeholder="Pesquisar livro ou autor" autocomplete="off"></label>
-<div class="cl" id="cl" role="group" aria-label="Categorias"></div>
-</aside>
-<div>
-<div class="ch" id="ch" aria-live="polite"></div>
-<div class="grid" id="grid"></div>
-<div class="nt"><span class="i">info</span><div><b>Antes de pagar:</b> confirme edição, formato, stock e custos de entrega pelo WhatsApp.</div></div>
-</div>
-</div>
+<section class="hero"><div class="wrap hg">
+<h1>Livros para o seu dinheiro, o seu crescimento e a sua família.</h1>
+<p>Livros em módulos e APK, organizados por categoria e temas. A versão física estará disponível em breve. Peça pelo WhatsApp.</p>
+<div class="acts"><a class="btn gold" href="#categorias"><span class="i">menu_book</span>Ver categorias</a><a class="btn wa" href="https://wa.me/258852450509?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Wahziva." target="_blank" rel="noopener"><span class="i">chat</span>Falar no WhatsApp</a></div>
 </div></section>
 
-<section class="sec alt" id="pedir"><div class="wrap">
-<div class="sh"><h2>Como fazer o pedido</h2></div>
-<div class="stp">
-<div><span class="nn">01</span><h3>Escolha</h3><p>Navegue pelas prateleiras ou pesquise e leia o resumo do livro.</p></div>
-<div><span class="nn">02</span><h3>Peça</h3><p>Toque em «Pedir». O WhatsApp abre com o título já escrito.</p></div>
-<div><span class="nn">03</span><h3>Combine</h3><p>Confirmamos pagamento e entrega consigo antes de concluir.</p></div>
+<div class="nav"><div class="wrap"><nav class="nv" id="nv" aria-label="Ir para categoria"></nav></div></div>
+
+<main id="categorias"><div class="wrap">
+<div class="sh"><div><h2>Categorias de livros</h2><p id="ct"></p></div></div>
+<div class="grid" id="grid"></div>
+</div></main>
+
+<section class="fmt"><div class="wrap">
+<h2>Formatos disponíveis</h2><p>Cada categoria pode ser pedida no formato que preferir.</p>
+<div class="fx">
+<div class="fc"><span class="ic"><span class="i">view_module</span></span><span class="bdg">Disponível</span><h3>Módulos</h3><p>Conteúdo dividido em módulos, para estudar e aplicar passo a passo.</p><a class="btn wa" href="https://wa.me/258852450509?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20livros%20em%20m%C3%B3dulos%20da%20Wahziva." target="_blank" rel="noopener"><span class="i">chat</span>Saber mais</a></div>
+<div class="fc"><span class="ic"><span class="i">android</span></span><span class="bdg">Disponível</span><h3>APK</h3><p>Versão em aplicação APK, para ler e consultar no telemóvel.</p><a class="btn wa" href="https://wa.me/258852450509?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20livros%20em%20APK%20da%20Wahziva." target="_blank" rel="noopener"><span class="i">chat</span>Saber mais</a></div>
+<div class="fc s"><span class="ic"><span class="i">auto_stories</span></span><span class="bdg s">Em breve</span><h3>Livro físico</h3><p>Ainda não está disponível. Deixe o seu contacto e avisamos quando chegar.</p><a class="btn" href="https://wa.me/258852450509?text=Ol%C3%A1%21%20Gostaria%20de%20ser%20avisado%20quando%20os%20livros%20f%C3%ADsicos%20da%20Wahziva%20estiverem%20dispon%C3%ADveis." target="_blank" rel="noopener"><span class="i">notifications</span>Avisar-me</a></div>
 </div></div></section>
 
-<section class="sec" id="duvidas"><div class="wrap fq">
-<div><h2>Perguntas frequentes</h2><p style="color:var(--mut);margin-top:14px">Não encontrou a resposta? Escreva-nos pelo WhatsApp.</p></div>
-<div>
-<details open><summary>Quanto custa cada livro?</summary><p>Todos os livros do catálogo têm o preço de 100 MT.</p></details>
-<details><summary>Como faço o pagamento?</summary><p>Combinamos a forma de pagamento consigo pelo WhatsApp, antes de concluir o pedido.</p></details>
-<details><summary>Como é feita a entrega?</summary><p>Confirmamos disponibilidade, formato e custos de entrega consigo no momento do pedido.</p></details>
-<details><summary>Posso pedir mais de um livro?</summary><p>Sim. Indique no WhatsApp todos os títulos que pretende e confirmamos tudo numa só conversa.</p></details>
+<section class="how"><div class="wrap">
+<h2>Como fazer o pedido</h2>
+<div class="hs">
+<div><span class="ic"><span class="i">category</span></span><p><b>1. Escolha a categoria e o formato</b><span>Veja os temas e selecione Módulos ou APK.</span></p></div>
+<div><span class="ic"><span class="i">chat</span></span><p><b>2. Peça pelo WhatsApp</b><span>O botão abre a conversa com categoria e formato já escritos.</span></p></div>
+<div><span class="ic"><span class="i">local_shipping</span></span><p><b>3. Combine os detalhes</b><span>Confirmamos títulos, pagamento e como receber.</span></p></div>
 </div></div></section>
 
-<section><div class="wrap"><div class="cta">
-<div><h2>Pronto para escolher o seu próximo livro?</h2><p>Pergunte sobre títulos, disponibilidade, pagamento ou entrega.</p></div>
-<div class="acts"><a class="btn bg" href="https://wa.me/258852450509?text=Ol%C3%A1%21%20Gostaria%20de%20esclarecer%20uma%20d%C3%BAvida%20sobre%20os%20livros%20da%20Wahziva." target="_blank" rel="noopener"><span class="i">chat</span>Falar no WhatsApp</a><a class="btn bl" href="tel:+258852450509"><span class="i">call</span>85 245 0509</a></div>
-</div></div></section>
-</main>
-<footer><div class="wrap"><div class="fg">
-<div><a class="brand" href="#inicio"><span class="logo">W</span>Wahziva</a><p style="max-width:340px;margin-top:12px">Livros para ganhar, poupar, decidir e viver melhor.</p></div>
-<div class="fl"><b style="color:#fff">Navegar</b><a href="#livros">Biblioteca</a><a href="#pedir">Como pedir</a><a href="#duvidas">Dúvidas</a></div>
-<div class="fl"><b style="color:#fff">Contactos</b><a href="https://wa.me/258852450509" target="_blank" rel="noopener"><span class="i">chat</span>WhatsApp: +258 85 245 0509</a><a href="tel:+258852450509"><span class="i">call</span>Chamada telefónica</a></div>
-</div><div class="copy">© <span id="yr"></span> Wahziva. Todos os direitos reservados.</div></div></footer>
-<a class="fab" href="https://wa.me/258852450509?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Wahziva." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><span class="i" style="font-variation-settings:'FILL' 1">chat</span></a>
-<dialog id="dlg" aria-label="Detalhes do livro"></dialog>
+<footer><div class="wrap">
+<div class="fg">
+<a class="brand" href="#"><span class="logo">W</span>Wahziva</a>
+<div class="fl"><a href="https://wa.me/258852450509" target="_blank" rel="noopener"><span class="i">chat</span>WhatsApp: +258 85 245 0509</a><a href="tel:+258852450509"><span class="i">call</span>Ligar</a></div>
+</div>
+<div class="copy">© <span id="yr"></span> Wahziva. Todos os direitos reservados.</div>
+</div></footer>
+<a class="fab" href="https://wa.me/258852450509?text=Ol%C3%A1%21%20Vim%20pelo%20site%20Wahziva." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><span class="i">chat</span></a>
 <script>
-const PRICE=100,TEL='258852450509';
-/* Categorias: [nome, cor, texto sobre a cor, ícone, descrição, tópicos] */
-const C={
-emp:['Empreendedorismo e Negócios','#E4572E','#fff','storefront','Criar, vender e fazer crescer o seu negócio.',['Como criar e desenvolver um negócio','Como ganhar dinheiro e criar fontes de rendimento','Marketing, vendas e negociação','Mentalidade empreendedora','Como criar negócios de sucesso']],
-fin:['Finanças Pessoais','#0B7A4B','#fff','savings','Poupar, gerir o dinheiro e construir riqueza.',['Como poupar e gerir dinheiro','Como sair das dívidas','Como construir riqueza','Educação financeira','Como alcançar a independência financeira']],
-inv:['Investimentos','#1F4FD8','#fff','candlestick_chart','Fazer o dinheiro crescer com critério e controlo de risco.',['Investimentos para iniciantes','Mercado financeiro e Forex','Investimentos em ações e outros ativos','Como fazer o dinheiro crescer','Gestão de risco e construção de património']],
-hab:['Bons Hábitos e Desenvolvimento Pessoal','#F2A900','#10201C','event_repeat','Disciplina, tempo e rotinas que sustentam o sucesso.',['Disciplina e força de vontade','Gestão do tempo e produtividade','Construção de hábitos positivos','Superação pessoal','Como desenvolver uma mentalidade de sucesso']],
-sab:['Sabedoria e Filosofia de Vida','#6B3FD1','#fff','self_improvement','Decidir melhor e compreender o comportamento humano.',['Sabedoria para tomar melhores decisões','Inteligência emocional','Psicologia do comportamento humano','Filosofia prática para a vida','Lições de vida e histórias inspiradoras']],
-aut:['Autonomia e Liberdade Pessoal','#0E8A8F','#fff','lock_open','Pensar por conta própria e conquistar liberdade.',['Como pensar por conta própria','Independência financeira','Autoconfiança e autoestima','Como deixar de depender da aprovação dos outros','Como conquistar liberdade pessoal e financeira']],
-rel:['Namoro, Amor e Relacionamentos','#D6336C','#fff','favorite','Construir relações saudáveis, com confiança e limites.',['Como conquistar e manter um relacionamento saudável','Como compreender melhor o parceiro','Comunicação entre casais','Como construir confiança e respeito','Como identificar relacionamentos tóxicos e estabelecer limites']],
-pat:['Paternidade e Maternidade','#8A5A2B','#fff','family_restroom','Educar com disciplina, afeto e responsabilidade.',['Como ser um bom pai','Como ser uma boa mãe','Educação e disciplina dos filhos','Como compreender as emoções das crianças','Como construir uma família forte e saudável','Como educar os filhos para serem responsáveis e independentes']]
-};
-const K=Object.keys(C);
-/* Livros: [título, categoria, ícone, autor, descrição] */
-const B=[
-['Noções Básicas de Empreendedorismo','emp','rocket_launch','','Bases para planear e lançar uma iniciativa comercial.'],
-['Empreendedorismo e Tráfego Pago','emp','ads_click','','Introdução a negócios digitais e publicidade online.'],
-['Marketing Digital para Iniciantes','emp','campaign','','Conceitos básicos de marketing e presença digital.'],
-['A Arte da Negociação','emp','handshake','','Prepare conversas de venda e negocie com estratégia.'],
-['Importação da China para Iniciantes','emp','directions_boat','','Fornecedores e custos de importação: primeiros passos.'],
-['Como Criar Múltiplas Fontes de Renda','emp','account_tree','','Explore oportunidades e avalie riscos com critério.'],
-['Educação Financeira para Iniciantes','fin','savings','','Organize o dinheiro, poupe e planeie melhor.'],
-['Pai Rico, Pai Pobre','fin','home','Robert Kiyosaki','Princípios populares sobre dinheiro, ativos e mentalidade.'],
-['O Homem Mais Rico da Babilónia','fin','account_balance','George S. Clason','Lições clássicas sobre poupança e gestão do dinheiro.'],
-['Os Segredos da Mente Milionária','fin','diamond','T. Harv Eker','Crenças e hábitos relacionados com o dinheiro.'],
-['Pense e Enriqueça','fin','lightbulb','Napoleon Hill','Metas, persistência e princípios de realização.'],
-['Casais Inteligentes Enriquecem Juntos','fin','wallet','Gustavo Cerbasi','Planeamento financeiro a dois e construção de património.'],
-['O Investidor Inteligente','inv','insights','Benjamin Graham','Clássico sobre investir com disciplina e margem de segurança.'],
-['Um Passeio Aleatório por Wall Street','inv','show_chart','Burton Malkiel','Como funcionam os mercados e as estratégias de investimento.'],
-['Investimentos para Iniciantes','inv','trending_up','','Primeiros passos para fazer o dinheiro crescer.'],
-['Mercado Financeiro e Forex','inv','currency_exchange','','Conceitos do mercado financeiro e do câmbio.'],
-['Investir em Ações para Iniciantes','inv','bar_chart','','Noções de ações e de outros ativos.'],
-['Gestão de Risco e Construção de Património','inv','shield','','Como proteger e fazer crescer o que construiu.'],
-['Hábitos Atómicos','hab','scatter_plot','James Clear','Pequenas mudanças e sistemas para criar hábitos.'],
-['O Poder do Hábito','hab','autorenew','Charles Duhigg','Como os hábitos funcionam e como os mudar.'],
-['Os 7 Hábitos das Pessoas Altamente Eficazes','hab','adjust','Stephen Covey','Princípios para a eficácia pessoal e profissional.'],
-['O Milagre da Manhã','hab','wb_sunny','Hal Elrod','Rotinas matinais e organização pessoal.'],
-['Gestão do Tempo na Prática','hab','hourglass_top','','Organize prioridades e aproveite melhor o tempo.'],
-['Hábitos que Levam ao Sucesso','hab','repeat','','Crie rotinas e avance com consistência.'],
-['Meditações','sab','balance','Marco Aurélio','Reflexões estoicas sobre dever, serenidade e decisão.'],
-['Inteligência Emocional','sab','mood','Daniel Goleman','Como as emoções influenciam as nossas escolhas.'],
-['Rápido e Devagar','sab','speed','Daniel Kahneman','Psicologia do pensamento e do comportamento humano.'],
-['O Homem em Busca de Sentido','sab','explore','Viktor Frankl','Uma lição de vida sobre propósito e superação.'],
-['O Poder do Agora','sab','self_improvement','Eckhart Tolle','Reflexões sobre atenção, presença e vida quotidiana.'],
-['O Alquimista','sab','travel_explore','Paulo Coelho','História inspiradora sobre jornada e escolhas.'],
-['Desperte o Seu Gigante Interior','aut','emoji_events','Tony Robbins','Metas, decisões e desenvolvimento pessoal.'],
-['Autoconfiança na Prática','aut','fitness_center','','Fortaleça a confiança e decida com mais segurança.'],
-['Mentalidade de Crescimento','aut','psychology','','Aprendizagem, estratégia e evolução contínua.'],
-['A Coragem de Ser Imperfeito','aut','favorite','Brené Brown','Vulnerabilidade, coragem e aceitação pessoal.'],
-['Desperte Seu Potencial','aut','bolt','','Disciplina, foco e mentalidade orientada para objetivos.'],
-['Liberdade Pessoal e Financeira','aut','lock_open','','Como pensar por conta própria e conquistar autonomia.'],
-['As 5 Linguagens do Amor','rel','chat_bubble','Gary Chapman','Como expressar e receber amor no relacionamento.'],
-['Comunicação Não-Violenta','rel','forum','Marshall Rosenberg','Comunicar com empatia e resolver conflitos.'],
-['Homens São de Marte, Mulheres São de Vénus','rel','people','John Gray','Compreender melhor o parceiro e as diferenças.'],
-['Os Sete Princípios para Fazer um Casamento Dar Certo','rel','volunteer_activism','John Gottman','Confiança, respeito e comunicação entre casais.'],
-['Limites','rel','block','Henry Cloud e John Townsend','Como estabelecer limites saudáveis nas relações.'],
-['Relacionamentos Tóxicos','rel','heart_broken','','Como identificar sinais de alerta e proteger-se.'],
-['Disciplina Positiva','pat','rule','Jane Nelsen','Educar com firmeza e respeito, sem punições.'],
-['Como Falar para as Crianças Ouvirem','pat','record_voice_over','Adele Faber e Elaine Mazlish','Comunicação eficaz entre pais e filhos.'],
-['O Cérebro da Criança','pat','psychology_alt','Daniel Siegel e Tina Payne Bryson','Compreender as emoções e o desenvolvimento dos filhos.'],
-['Pais Brilhantes, Professores Fascinantes','pat','school','Augusto Cury','Educação, emoção e formação de filhos responsáveis.'],
-['Como Ser um Bom Pai','pat','man','','Presença, exemplo e liderança dentro de casa.'],
-['Como Ser uma Boa Mãe','pat','woman','','Cuidado, equilíbrio e uma família forte e saudável.']
-].map((b,i)=>({id:i+1,t:b[0],c:b[1],e:b[2],a:b[3],d:b[4]}));
+const TEL='258852450509';
+/* Categorias: [nome, cor, ícone, temas] */
+const C=[
+['Empreendedorismo e Negócios','#EA580C','storefront',['Como criar e desenvolver um negócio.','Como ganhar dinheiro e criar fontes de rendimento.','Marketing, vendas e negociação.','Mentalidade empreendedora.','Como criar negócios de sucesso.']],
+['Finanças Pessoais','#16A34A','savings',['Como poupar e gerir dinheiro.','Como sair das dívidas.','Como construir riqueza.','Educação financeira.','Como alcançar a independência financeira.']],
+['Investimentos','#2563EB','candlestick_chart',['Investimentos para iniciantes.','Mercado financeiro e Forex.','Investimentos em ações e outros ativos.','Como fazer o dinheiro crescer.','Gestão de risco e construção de património.']],
+['Bons Hábitos e Desenvolvimento Pessoal','#D97706','event_repeat',['Disciplina e força de vontade.','Gestão do tempo e produtividade.','Construção de hábitos positivos.','Superação pessoal.','Como desenvolver uma mentalidade de sucesso.']],
+['Sabedoria e Filosofia de Vida','#7C3AED','self_improvement',['Sabedoria para tomar melhores decisões.','Inteligência emocional.','Psicologia do comportamento humano.','Filosofia prática para a vida.','Lições de vida e histórias inspiradoras.']],
+['Autonomia e Liberdade Pessoal','#0D9488','lock_open',['Como pensar por conta própria.','Independência financeira.','Autoconfiança e autoestima.','Como deixar de depender da aprovação dos outros.','Como conquistar liberdade pessoal e financeira.']],
+['Namoro, Amor e Relacionamentos','#DB2777','favorite',['Como conquistar e manter um relacionamento saudável.','Como compreender melhor o parceiro.','Comunicação entre casais.','Como construir confiança e respeito.','Como identificar relacionamentos tóxicos e estabelecer limites.']],
+['Paternidade e Maternidade','#92400E','family_restroom',['Como ser um bom pai.','Como ser uma boa mãe.','Educação e disciplina dos filhos.','Como compreender as emoções das crianças.','Como construir uma família forte e saudável.','Como educar os filhos para serem responsáveis e independentes.']]
+];
 const $=s=>document.querySelector(s),I=(n,x='')=>`<span class="i ${x}" aria-hidden="true">${n}</span>`;
-const wrap=t=>{const l=[''];t.split(' ').forEach(w=>{const c=l[l.length-1];if(c&&(c+' '+w).length>15)l.push(w);else l[l.length-1]=(c+' '+w).trim()});return l};
-function cover(b){const c=C[b.c],k=K.indexOf(b.c),L=wrap(b.t),fs=L.length>3?15:17,tc=c[2],o=b.id*53;
-return `<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Capa de ${b.t}"><rect width="200" height="300" fill="${c[1]}"/><circle cx="${30+o%130}" cy="${230+o%50}" r="120" fill="#000" opacity=".13"/><circle cx="${190-o%70}" cy="${40+o%40}" r="${60+o%30}" fill="#fff" opacity=".12"/><rect x="10" y="10" width="180" height="280" fill="none" stroke="${tc}" stroke-width="1.2" opacity=".55"/><text x="24" y="34" font-family="Georgia,serif" font-size="13" fill="${tc}" opacity=".9">0${k+1}</text><text x="24" y="86" font-size="46" dominant-baseline="central" fill="${tc}" font-family="Material Symbols Sharp" style="font-variation-settings:'FILL' 1,'wght' 500">${b.e}</text><rect x="24" y="130" width="28" height="3" fill="${tc}"/><text font-family="Georgia,serif" font-weight="700" font-size="${fs}" fill="${tc}">${L.map((x,i)=>`<tspan x="24" y="${156+i*(fs+4)}">${x}</tspan>`).join('')}</text>${b.a?`<text x="24" y="262" font-size="8.5" font-family="sans-serif" fill="${tc}" opacity=".9">${b.a.length>34?b.a.slice(0,32)+'…':b.a}</text>`:''}<text x="24" y="280" font-size="8" letter-spacing="3" font-weight="700" font-family="sans-serif" fill="${tc}" opacity=".85">WAHZIVA</text></svg>`}
-const cs=k=>`--c:${C[k][1]};--tc:${C[k][2]}`;
-const ask=b=>'https://wa.me/'+TEL+'?text='+encodeURIComponent(`Olá! Tenho interesse no livro "${b.t}" (${PRICE} MT) apresentado no site Wahziva. Pode informar-me sobre pagamento e entrega?`);
-let cat='all',az=false;const cl=$('#cl');
-cl.innerHTML=`<button class="cb" data-f="all" aria-pressed="true" style="--c:#10201C;--tc:#fff"><span class="n">00</span><span class="ic">${I('apps')}</span>Todos os livros<em>${B.length}</em></button>`+K.map((k,i)=>`<button class="cb" data-f="${k}" aria-pressed="false" style="${cs(k)}"><span class="n">0${i+1}</span><span class="ic">${I(C[k][3],'f')}</span>${C[k][0]}<em>${B.filter(b=>b.c===k).length}</em></button>`).join('');
-$('#nb').textContent=B.length;
+const norm=s=>s.toLocaleLowerCase('pt').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const ask=(n,f)=>'https://wa.me/'+TEL+'?text='+encodeURIComponent(`Olá! Tenho interesse em livros da categoria "${n}" no formato ${f} (site Wahziva). Pode enviar-me os títulos disponíveis, o preço e como receber?`);
+const hi=(t,q)=>{if(!q)return t;const i=norm(t).indexOf(q);return i<0?t:t.slice(0,i)+'<mark>'+t.slice(i,i+q.length)+'</mark>'+t.slice(i+q.length)};
+$('#nv').innerHTML=C.map((c,i)=>`<a href="#c${i+1}" style="--c:${c[1]}">${I(c[2])}${c[0].split(' e ')[0].split(',')[0]}</a>`).join('');
 function render(){
-const q=$('#q').value.trim().toLocaleLowerCase('pt'),c=C[cat];
-let l=B.filter(b=>(cat==='all'||b.c===cat)&&(b.t+' '+b.a+' '+b.d+' '+C[b.c][0]).toLocaleLowerCase('pt').includes(q));
-if(az)l.sort((a,b)=>a.t.localeCompare(b.t,'pt'));
-$('#ch').setAttribute('style',c?cs(cat):'--c:#10201C');
-$('#ch').innerHTML=`<div class="k"><h3>${c?c[0]:'Todos os livros'}</h3><label><span class="sr">Ordenar</span><select id="so"><option value="">Ordem do catálogo</option><option value="t"${az?' selected':''}>Título: A–Z</option></select></label></div><p class="cnt">${c?c[4]+' ':'Oito prateleiras num só catálogo. '}${l.length} ${l.length===1?'livro':'livros'} · ${PRICE} MT cada.</p>${c?`<ul>${c[5].map(t=>`<li>${I('check')}${t}</li>`).join('')}</ul>`:''}`;
-$('#grid').innerHTML=l.length?l.map(b=>{const c=C[b.c];return `<article class="card" style="${cs(b.c)}"><div data-open="${b.id}">${cover(b)}</div><div class="bd"><span class="tag">${I(c[3],'f')}${c[0]}</span><h3>${b.t}</h3>${b.a?`<span class="au">${b.a}</span>`:''}<p class="d">${b.d}</p><div class="ft"><span class="pr">${PRICE} MT</span><span class="row"><button class="btn bl sm" data-open="${b.id}">Resumo</button><a class="btn bw sm" href="${ask(b)}" target="_blank" rel="noopener" aria-label="Pedir ${b.t} pelo WhatsApp">${I('chat')}Pedir</a></span></div></div></article>`}).join(''):`<div class="empty">${I('search_off')}<h3 style="font:400 1.4rem var(--s)">Nenhum livro encontrado</h3><p style="color:var(--mut)">Experimente outra palavra ou outra prateleira.</p></div>`}
-cl.onclick=e=>{const x=e.target.closest('.cb');if(!x)return;cat=x.dataset.f;cl.querySelectorAll('.cb').forEach(y=>y.setAttribute('aria-pressed',y===x));render();if(innerWidth<960)$('#ch').scrollIntoView({block:'start'})};
-$('#q').oninput=()=>{if($('#q').value&&cat!=='all'){cat='all';cl.querySelectorAll('.cb').forEach(y=>y.setAttribute('aria-pressed',y.dataset.f==='all'))}render()};
-document.addEventListener('change',e=>{if(e.target.id==='so'){az=e.target.value==='t';render()}});
-const dlg=$('#dlg');let last;
-document.addEventListener('click',e=>{const o=e.target.closest('[data-open]');
-if(o){const b=B[o.dataset.open-1],c=C[b.c];last=o;
-dlg.innerHTML=`<div class="dg" style="${cs(b.c)}"><div class="ds">${cover(b)}</div><div class="dx"><button class="x" data-x aria-label="Fechar">${I('close')}</button><span class="tag">${I(c[3],'f')}${c[0]}</span><h2>${b.t}</h2>${b.a?`<span class="au">${b.a}</span>`:''}<p>${b.d} ${c[4]}</p><p style="color:var(--mut);font-size:.92rem">Confirme edição, formato, stock e entrega pelo WhatsApp.</p><div class="buy"><span class="pr">${PRICE} MT</span><a class="btn bw" href="${ask(b)}" target="_blank" rel="noopener">${I('chat')}Pedir pelo WhatsApp</a></div></div></div>`;dlg.showModal()}
-if(e.target.closest('[data-x]')||e.target===dlg)dlg.close()});
-dlg.onclose=()=>last&&last.focus&&last.focus();
-$('#pan').innerHTML=[8,18,40,31].map(i=>`<div data-open="${i}" style="display:contents">${cover(B[i-1])}</div>`).join('');
-$('#bg').onclick=()=>{const o=$('#nv').classList.toggle('open');$('#bg').setAttribute('aria-expanded',o)};
-$('#nv').onclick=e=>{if(e.target.tagName==='A'){$('#nv').classList.remove('open');$('#bg').setAttribute('aria-expanded',false)}};
+const raw=$('#q').value.trim(),q=norm(raw);
+const l=C.map((c,i)=>({c,i})).filter(x=>!q||norm(x.c[0]).includes(q)||x.c[3].some(t=>norm(t).includes(q)));
+$('#ct').textContent=q?`${l.length} ${l.length===1?'categoria encontrada':'categorias encontradas'}`:'8 categorias e os temas que cada uma aborda.';
+$('#grid').innerHTML=l.length?l.map(({c,i})=>`<article class="cd" id="c${i+1}" data-n="${c[0]}" style="--c:${c[1]}"><div class="ch"><span class="ic">${I(c[2])}</span><div><small>CATEGORIA 0${i+1}</small><h3>${hi(c[0],q)}</h3></div></div><div class="cb"><b>Temas abordados</b><ul>${c[3].map(t=>`<li>${I('check_circle')}<span>${hi(t,q)}</span></li>`).join('')}</ul></div><div class="cf"><div class="fm" role="radiogroup" aria-label="Formato"><button role="radio" aria-checked="true" data-fmt="Módulos">${I('view_module')}Módulos</button><button role="radio" aria-checked="false" data-fmt="APK">${I('android')}APK</button><span class="soon" aria-disabled="true">${I('auto_stories')}Físico<em>Em breve</em></span></div><a class="btn wa" href="${ask(c[0],'Módulos')}" target="_blank" rel="noopener">${I('chat')}<span class="lb">Pedir em Módulos</span></a></div></article>`).join(''):`<div class="empty">${I('search_off')}<p><b>Nenhuma categoria encontrada.</b></p><p>Experimente outra palavra, como «dinheiro» ou «filhos».</p></div>`}
+$('#q').oninput=render;
+document.addEventListener('click',e=>{const b=e.target.closest('[data-fmt]');if(!b)return;const d=b.closest('.cd');d.querySelectorAll('[data-fmt]').forEach(x=>x.setAttribute('aria-checked',x===b));const a=d.querySelector('.btn.wa');a.href=ask(d.dataset.n,b.dataset.fmt);a.querySelector('.lb').textContent='Pedir em '+b.dataset.fmt});
 $('#yr').textContent=new Date().getFullYear();
 render();
 </script>
 </body>
-</html>
+  </html>
